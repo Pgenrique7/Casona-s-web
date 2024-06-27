@@ -29,7 +29,7 @@ document.querySelector('.carousel').addEventListener('mouseover', () => {
 });
 
 document.querySelector('.carousel').addEventListener('mouseout', () => {
-    autoSlide = setInterval(nextSlide, 3000);
+    autoSlide = setInterval(nextSlide, 5000);
 });
 
-let autoSlide = setInterval(nextSlide, 3000);
+let autoSlide = setInterval(nextSlide, 5000);

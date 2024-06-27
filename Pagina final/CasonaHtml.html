@@ -10,18 +10,18 @@
     <header>
         <nav>
             <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Leyes Casoneras</a></li>
-                <li><a href="#">Fotos</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#leyesCasoneras">Leyes Casoneras</a></li>
+                <li><a href="#fotos">Fotos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section class="cabezera">
+        <section class="cabezera" id="inicio">
             <h1>Bienvenido a la pagina oficial del parque de la Casona</h1>
         </section>
-        <section class="content">
+        <section class="content" id="leyesCasoneras">
             <article>
                 <h2>LEYES CASONERAS 🚫 🙅 </h2>
                 <p class="formatoTexto">
@@ -51,29 +51,31 @@
                     Domi I FG1
             </article>
         </section>
-        <section class="fotos">
+        <section class="fotos" id="fotos">
             <article>
                 <h2 class="tituloFotos">FOTOS 📸</h2>
-                <div class="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="img1.jpg" alt="Imagen 1">
+                <div class="contenedorCarrusel">
+                    <div class="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="img/IMG-20240609-WA0023.jpg" alt="Imagen 1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/IMG-20240618-WA0002.jpg" alt="Imagen 2">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/Screenshot_20240627_034913_com.huawei.himovie.overseas.jpg" alt="Imagen 3">
+                            </div>
                         </div>
-                        <div class="carousel-item">
-                            <img src="img2.jpg" alt="Imagen 2">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="img3.jpg" alt="Imagen 3">
-                        </div>
+                        <button class="carousel-control prev" onclick="prevSlide()">&#10094;</button>
+                        <button class="carousel-control next" onclick="nextSlide()">&#10095;</button>
                     </div>
-                    <button class="carousel-control prev" onclick="prevSlide()">&#10094;</button>
-                    <button class="carousel-control next" onclick="nextSlide()">&#10095;</button>
                 </div>
-                <script src="scripts.js"></script>
+                <script src="CasonaJS.js"></script>
             </article>
         </section>
 
-        <section class="contacto">
+        <section class="contacto" id="contacto">
             <article>
             <h2> CONTACTO 📞</h2>
             <p>Para contactar con nosotros tendras que escribir al 672218123 o escribir al siguiente correo: Casonerosreales@gmail.com</p>
